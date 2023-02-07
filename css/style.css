@@ -1,0 +1,291 @@
+@charset "UTF-8"
+
+/* 共通部分------*/
+
+html {
+    font-size: 100%;
+}
+
+body {
+  font-family: "Meiryo", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: rgb(59, 41, 26);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* header-----------*/
+
+.main-nav {
+  display:flex;
+  font-size: 1.25 rem;
+  text-transform: uppercase;
+  margin-top: 25px;
+  list-style: none;
+}
+
+.main-nav li {
+  margin: auto;
+}
+
+.main-nav a {
+  color: #432;
+}
+
+.main-nav a:hover {
+  color: rgb(147, 213, 153);
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+  padding-bottom: 20px;
+}
+
+/*Home*/
+.title {
+  margin-top: 50px;
+  font-size: 5rem;
+  font-family: 'philosopher', serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(147, 213, 153);
+}
+
+.self-port {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.page-title {
+  margin-top: 70px;
+  font-size: 4rem;
+  font-family: 'philosopher', serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+}
+
+/*--------------About-----------------*/
+.about {
+  background-color:  rgb(147, 213, 153);
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.intro {
+  margin-top: 50px;
+  font-size: 1.5rem;
+  margin-bottom: 80px;
+}
+
+.span {
+  color: white;
+  font-size: 1.8rem;
+}
+
+
+/*--------------SKILLS-----------------*/
+
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+.icon {
+  text-align: center;
+}
+
+/*------Contact form------*/
+.w {
+  background-color:  rgb(147, 213, 153);
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.grid2 {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+.w-title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/*------Contact------*/
+.email {
+  margin-top: 50px;
+  color:rgb(147, 213, 153);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.address {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*------Footer------*/
+footer {
+  background-color: #432;
+}
+
+.footer {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.name {
+  color:white;
+}
+
+/* ------------mobile view --------------------*/
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 2.5rem;
+    }
+  
+  
+  /* header*/
+  .main-nav {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .main-nav li {
+    margin: 0 20px;
+  }
+  
+  /* home page*/
+  .home-content {
+    margin-top: 20%;
+  }
+    
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* news page */
+  .news-contents {
+    flex-direction: column;
+  }
+  
+  article,
+  aside {
+    width: 100%;
+  }
+  
+  #news .page-title {
+    margin-top: 30px;
+  }
+  
+  aside {
+    margin-top: 60px;
+  }
+  
+  .post-info {
+    margin-bottom: 30px;
+  }
+  
+  .post-date {
+    width: 70px;
+    height: 70px;
+    font-size: 1rem;
+  }
+  
+  .post-date span {
+    font-size: 0.875rem;
+    padding-top: 2px;
+  }
+  
+  .post-title {
+    font-size: 1.375rem;
+  }
+  
+  .post-cat {
+    font-size: 0.875rem;
+    margin-top: 10px;
+  }
+  
+  .post-title,
+  .post-cat{
+    margin-left: 80px;
+  }
+  
+  .ad {
+    margin-top: 20px;
+  }
+  
+  /*Menu*/
+  .menu-content {
+    margin-top: 20%;
+  }
+  
+  .big-box {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  
+  .big-box img {
+    height: auto;
+  }
+  
+   /* CONTACT */
+  #contact .page-title {
+    margin-top: 40px;
+  }
+  
+  /* フォーム */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    max-width: 100%
+  }
+  
+  /* 店舗情報・地図 / SNS */
+      #location .wrapper,
+      #sns .wrapper {
+          flex-direction: column;
+      }
+      .location-info,
+      .location-map,
+      .sns-box {
+          width: 100%;
+      }
+      .sns-box {
+          margin-bottom: 30px;
+      }
+    
+  }/* Mobile view end*/
